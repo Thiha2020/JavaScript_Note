@@ -5,7 +5,9 @@
     </head>
     <body>
         <h1>JavaScript Note</h1>
+        
         <h4>*To see javascript  CODE result see in browser console</h4>
+        <div class="1">
         <h2>Passing Values to Functions with Arguments</h2>
         <p>Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.</p>
         <p>CODE 1.1</p>
@@ -15,9 +17,15 @@
         functionWithArgs:functionWithArgs(1,2);
         functionWithArgs:functionWithArgs(7,9);</code>
         <div class="code">In CODE 1.1 x and y are parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments can use with parameters.</div>
+        </div>
+        
+        <div class="2">
         <h2> Global Scope and Functions</h2>
         <p>In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again.</p>
-        <div class="remb">*You should always declare your variables with var*</div>
+        </div>
+        <p>*You should always declare your variables with var*</p>
+        
+        <div class="3">
         <h2> Local Scope and Functions</h2>
         <p>Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function.</p>
         <p>CODE 1.2</p>
@@ -27,6 +35,8 @@
         }
         myLocalScope();
         console.log('Outside my local scope,I am', myVar);</code>
-        <div class="remb">*You will see that myVar is undefined or caught syntax error in console</div>
+        </div>
+        <p>*You will see that myVar is undefined or caught syntax error in console</p>
+    
     </body>
 </html>
