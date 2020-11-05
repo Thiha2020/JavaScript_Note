@@ -8,6 +8,7 @@ a{
 div + p ,h4{ 
     color:red;
     font-weight: 900;
+    background-color: whitesmoke;
 }
 
 /*Class styling*/

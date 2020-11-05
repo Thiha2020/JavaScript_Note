@@ -36,3 +36,19 @@ var zeroIntonum=timesTen(0);
 
 console.log(tenIntonum, fiveIntonum, zeroIntonum);
 
+console.log("CODE 1.5");
+//Understanding Undefined Value returned from a Function
+var sum = 0;
+
+function addThree() {
+   sum = sum + 3; 
+}
+var sum = 1;
+function addFive() {
+   sum= sum + 5;
+}
+
+console.log(addThree());
+console.log(addFive());
+
+

@@ -41,7 +41,8 @@
         <div class="4">
             <h2>Global vs. Local Scope in Functions</h2>
             <p>It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.</p>
-            <code>console.log("CODE 1.3");
+            <p>CODE 1.3</p>
+            <code>
                 //Global variable
                 var transport="Bus";
                 
@@ -58,6 +59,7 @@
         <div class="5">
             <h2>Return a Value from a Function with Return</h2>
             <p>We can pass values into a function with <a href="#argument">argument</a>. You can use a return statement to send a value back out of a function.</p>
+            <p>CODE 1.4</p>
             <code>function timesTen(num){
                 return num*10;
             }
@@ -69,6 +71,27 @@
             console.log(tenIntonum, fiveIntonum, zeroIntonum);
         </code>
         </div>
+
+        <div class="5">
+            <h2>Understanding Undefined Value returned from a Function</h2>
+            <p>A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.</p>
+            <p>CODE 1.5</p>
+            <code>
+                var sum = 0;
+                function addThree() {
+                sum = sum + 3; 
+                }
+                var sum = 1;
+                function addFive() {
+                sum= sum + 5;
+                }
+
+                console.log(addThree());
+                console.log(addFive());
+            </code>
+        </div>
+        <p>*If I dont't add return statement in function it will display other value not undefined value.</p>
+
     
     </body>
 </html>
