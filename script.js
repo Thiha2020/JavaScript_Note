@@ -24,4 +24,15 @@ function myChoice() {
 myChoice();
 console.log(myChoice());
 
+console.log("CODE 1.4");
+//Return statement
+function timesTen(num){
+    return num*10;
+}
+
+var tenIntonum=timesTen(10);
+var fiveIntonum=timesTen(5);
+var zeroIntonum=timesTen(0);
+
+console.log(tenIntonum, fiveIntonum, zeroIntonum);
 

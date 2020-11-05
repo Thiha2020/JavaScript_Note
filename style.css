@@ -1,4 +1,9 @@
 /*CSS-element styling*/
+a{
+    font-style: italic;
+    color: green;
+    cursor: pointer;
+}
 /*Use color to emphazied*/
 div + p ,h4{ 
     color:red;

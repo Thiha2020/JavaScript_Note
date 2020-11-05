@@ -8,7 +8,7 @@
         
         <h4>*To see javascript  CODE result see in browser console</h4>
         <div class="1">
-        <h2>Passing Values to Functions with Arguments</h2>
+        <h2 id="argument">Passing Values to Functions with Arguments</h2>
         <p>Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.</p>
         <p>CODE 1.1</p>
         <code>function functionWithArgs(x,y) {
@@ -53,7 +53,22 @@
                 myChoice();
                 console.log(myChoice());</code>
         </div>
-        <p>*You must use return function to add local variable same to global variable*</p>
+        <p>*You must use return statement to add local variable if it is same to global variable*</p>
+
+        <div class="5">
+            <h2>Return a Value from a Function with Return</h2>
+            <p>We can pass values into a function with <a href="#argument">argument</a>. You can use a return statement to send a value back out of a function.</p>
+            <code>function timesTen(num){
+                return num*10;
+            }
+            
+            var tenIntonum=timesTen(10);
+            var fiveIntonum=timesTen(5);
+            var zeroIntonum=timesTen(0);
+            
+            console.log(tenIntonum, fiveIntonum, zeroIntonum);
+        </code>
+        </div>
     
     </body>
 </html>
