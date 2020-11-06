@@ -88,7 +88,7 @@ function welcomeToBoolean(){
 
 console.log(welcomeToBoolean());//=>true
 
-console.log("CODE 1.9")
+console.log("CODE 1.9");
 function selectBoy(male){
     if(male){
         return "You're boy."
@@ -102,7 +102,23 @@ var girl=selectBoy(false);
 
 console.log(boy);//The var boy assign value to true.So,=>I'm boy
 console.log(girl);//The var girl assign value to true.So,=>You're not boy.
-  
+
+console.log("CODE 2.0");
+function isTenEqual(ten){
+    if(ten==10){//equality operator(==), not assign operator(=)
+        return "It is equal to 10"
+    }
+    return "It is not equal"
+
+}
+
+var firstUserInput=10;
+var secondUserInput=9;
+var thirdUserInput="10";
+console.log(isTenEqual(firstUserInput));//=>It is equal to 10
+console.log(isTenEqual(secondUserInput));//=>It is not equal
+console.log(isTenEqual(thirdUserInput)); //=>It is equal to 10
+
  
   
   
