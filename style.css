@@ -4,6 +4,11 @@ a{
     color: green;
     cursor: pointer;
 }
+
+img{
+    width: 100%;
+    height: auto;
+}
 /*Use color to emphazied*/
 div + p ,h4{ 
     color:red;

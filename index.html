@@ -6,7 +6,7 @@
     <body>
         <h1>JavaScript Note</h1>
         
-        <h4>*To see javascript  CODE result see in browser console</h4>
+        <h4>*To see javascript  CODE result see in browser console or in image</h4>
         <div class="1">
         <h2 id="argument">Passing Values to Functions with Arguments</h2>
         <p>Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.</p>
@@ -72,7 +72,7 @@
         </code>
         </div>
 
-        <div class="5">
+        <div class="6">
             <h2>Understanding Undefined Value returned from a Function</h2>
             <p>A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.</p>
             <p>CODE 1.5</p>
@@ -90,7 +90,40 @@
                 console.log(addFive());
             </code>
         </div>
-        <p>*If I dont't add return statement in function it will display other value not undefined value.</p>
+        <p>*If I don't add return statement in function it will display other value not undefined value.</p>
+
+        <div class="7">
+            <h2>Assignment with a Returned Value</h2>
+            <p>In JavaScript, you can store a value in a variable with the assignment operator (=).</p>
+            <p>*If there are any calculations to the right of the = operator, those are performed before the value is assigned to the variable on the left of the operator.*</p>
+            <p>This means we can take the return value of a function and assign it to a variable.</p>
+            <p>CODE 1.6</p>
+            <code>
+                var processed=0;
+                function processArg(num){
+                    return (num+3)/7;
+                }
+                
+                processed=processArg(4);
+                
+                console.log(processed);
+
+            </code>
+        </div>
+
+        <div class="8">
+            <h2>Stand in Line</h2>
+            <p>In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.</p>
+            <p>So let write program like this</p>
+            <p>Code 1.7</p>
+            <img src="\image\code_1.7.png" alt="Code 1.7 fig">
+        </div>
+
+        <div class="9">
+            <h2>\</h2>
+        </div>
+
+
 
     
     </body>
