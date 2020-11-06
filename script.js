@@ -104,8 +104,10 @@ console.log(boy);//The var boy assign value to true.So,=>I'm boy
 console.log(girl);//The var girl assign value to true.So,=>You're not boy.
 
 console.log("CODE 2.0");
-function isTenEqual(ten){
-    if(ten==10){//equality operator(==), not assign operator(=)
+console.log("Comparsion Equality operators and strict equaltiy operator");
+console.log("Equality operator");
+function equalityOperator(ten){
+if(ten==10){//equality operator(==), not assign operator(=)
         return "It is equal to 10"
     }
     return "It is not equal"
@@ -115,10 +117,23 @@ function isTenEqual(ten){
 var firstUserInput=10;
 var secondUserInput=9;
 var thirdUserInput="10";
-console.log(isTenEqual(firstUserInput));//=>It is equal to 10
-console.log(isTenEqual(secondUserInput));//=>It is not equal
-console.log(isTenEqual(thirdUserInput)); //=>It is equal to 10
+console.log(equalityOperator(firstUserInput));//=>It is equal to 10
+console.log(equalityOperator(secondUserInput));//=>It is not equal
+console.log(equalityOperator(thirdUserInput)); //=>It is equal to 10
 
+console.log("Strict equality operator");
+function strictEqualityOperator(ten){
+    if(ten===10){
+        return "It is equal to number 10 or value type"
+    }
+    return "It is not equal number or  value type"
+}
+console.log(equalityOperator(firstUserInput));
+//=>It is equal to number 10 or value type
+console.log(equalityOperator(secondUserInput));
+//=>It is not equal number or  value type
+console.log(equalityOperator(thirdUserInput));
+//=>It is not equal number or  value type
  
   
   
