@@ -80,7 +80,28 @@ console.log(nextInLine(testArr, 6));
 /*=>"Add six to the end of the array and remove 1 from the first of the 
 array*/
 console.log("After: " + (testArr));//=>After: 2,3,4,5,6
-  
+
+console.log("CODE 1.8")
+function welcomeToBoolean(){
+    return true;
+}
+
+console.log(welcomeToBoolean());//=>true
+
+console.log("CODE 1.9")
+function selectBoy(male){
+    if(male){
+        return "You're boy."
+    }
+    return "You're not a boy."
+
+}
+
+var boy=selectBoy(true);
+var girl=selectBoy(false);
+
+console.log(boy);//The var boy assign value to true.So,=>I'm boy
+console.log(girl);//The var girl assign value to true.So,=>You're not boy.
   
  
   
