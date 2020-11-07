@@ -146,6 +146,7 @@
         <p>*Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.*<br>* In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. This is known as "Type Coercion". Once it does, however, it can compare terms as follows:*</p>
         <div class="code">In CODE 2.0, thirdUserInput value is not a number.Even if the function condition is equal to number value the thirdUserInput string value is still working with function condition equal to number value.<br>
         </div>
+        
         <div class="11">
             <p>Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
 
@@ -175,10 +176,46 @@
         </div>
 
         <div class="14">
-            <h2></h2>
+            <h2>Comparison with the Greater Than Operator</h2>
+            <p>The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.Like the equality operator, greater than operator will convert data types of values while comparing.</p>
+            <div class="code">
+            <p>5 > 3   //true</p>
+            <p>7 > '3' //true</p>
+            <p>2 > 3   //false</p>
+            <p>'1'>9   //false</p>
+            </div>
+            <p>CODE 2.3</p>
+            <img src="\image\code_2.3.png" alt="code 2.3 fig">
+        </div>
+
+        <div class="15">
+            <h2>Comparisons with the Logical And Operator</h2>
+            <p>Sometimes you will need to test more than one thing at a time. The logical and operator (&&) returns true if and only if the operands to the left and right of it are true.</p>
+            <p>CODE 2.4</p>
+            <img src="\image\code_2.4.png" alt="code 2.4 fig">
+
+        </div>
+
+        <div class="15">
+            <h2>Comparisons with the Logical Or Operator</h2>
+            <p>The logical or operator (||) returns true if either of the operands is true. Otherwise, it returns false.The logical or operator is composed of two pipe symbols: (||). </p>
+            <p>CODE 2.5</p>
+            <img src="\image\code_2.5.png" alt="code 2.5 fig">
         </div>
         
+        <div class="16">
+            <h2>Introducing Else Statements</h2>
+            <p>When a condition for an if statement is true, the block of code following it is executed. What about when that condition is false? Normally nothing would happen. With an else statement, an alternate block of code can be executed.</p>
+            <p>CODE 2.6</p>
+            <img src="\image\code_2.6.png" alt="code 2.6 fig">
+        </div>
 
+        <div class="17">
+            <h2>If you have multiple conditions that need to be addressed, you can chain if statements together with else if statements</h2>
+            <p>CODE 2.7</p>
+            <img src="\image\code_2.7.png" alt="code 2.7 fig">
+        </div>
+        <p>*Order is important in if, else if statements.The function is executed from top to bottom so you will want to be careful of what statement comes first.*</p>
             
 
 

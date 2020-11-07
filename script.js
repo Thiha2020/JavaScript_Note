@@ -135,6 +135,7 @@ console.log(equalityOperator(secondUserInput));
 console.log(equalityOperator(thirdUserInput));
 //=>It is not equal number or  value type
 
+console.log("Code 2.1")
 function testNotEqual(val) {
     if (val !=99){//If val is not equal to 99 print Not equal
         return "Not Equal";
@@ -144,6 +145,7 @@ function testNotEqual(val) {
 console.log(testNotEqual(99));//=>Equal
 console.log(testNotEqual(12));//=>Not Equal
 
+console.log("Code 2.2")
 function testStrictNotEqual(val){
     if (val !==10){//If  val is equal to 10 + data type print Not equal
         return "Not Equal";
@@ -158,7 +160,84 @@ var nine=testStrictNotEqual(9);
 console.log(ten);//=>Equal
 console.log(string);//=>Equal
 console.log(nine);//=>Not Equal
-  
 
+  
+console.log("Code 2.3");
+function testGreaterThan(val) {
+    if(val>1000){
+        return "Over 1000";
+    }
+    if(val>100){
+        return "Over 100 or 1000";
+    }
+    if(val>10){
+        return "Over 10 or 100";
+    }
+    return "under or 10";  
+}
+console.log(testGreaterThan(1));//=>under or 10
+console.log(testGreaterThan(10));//=>under or 10
+console.log(testGreaterThan(100));//=>Over 10 or 100
+console.log(testGreaterThan(1000));//=>Over 100 or 1000
+console.log(testGreaterThan(10000));//=>Over 1000
+
+console.log("Code 2.4");
+function testLogicalAnd(val){
+    if(val>25 && val<50){
+        return "Yes, you selected range between 50 to 25"
+    }
+    return "No,you select less than 25 or greater than 50"
+}
+var inRange=(testLogicalAnd(25));//Put number between 25 & 50
+var outRange=(testLogicalAnd(51));//Put number less than or greater than 25,50
+
+console.log(inRange);//=>Yes, you selected range between 50 to 25
+console.log(outRange);//=>No,you select less than 25 or greater than 50
+
+console.log("Code 2.5");
+function testLogicalOr(val){
+    if(val<25 || val>50){
+        return "Outside"
+    }
+    return "Inside"
+}
+var inside=testLogicalOr(25);
+var outside=testLogicalOr(51);
+console.log(inside);
+console.log(outside);
+
+console.log("Code 2.6");
+function testElse(password){
+    if(password===123){
+        result ="Correct Password";
+    }else{
+        result="Incorrect Password";
+    }
+    return result;
+}
+var correctUser=testElse(123);//Right data and number
+var wrongUser=testElse("blahblah");
+var wrongUser2=testElse("123");//Wrong data type
+console.log("Correct user "+correctUser);
+console.log("Uncorrect user "+wrongUser);
+console.log("Uncorrect user 2 "+wrongUser2);
+
+console.log("CODE 2.7");
+function testElseIf(lotteryNo){
+    if(lotteryNo=="ABC0123456789"){
+        return "Congrulation!You have win the prize!";
+    }else if(lotteryNo=="CBA9876543210"){
+        return "Congrulation!You have win the constellation prize!";
+    }else{
+        return "Sorry!Try again.";
+    }
+}
+var winner=testElseIf("ABC0123456789");
+var secondWinner=testElseIf("CBA9876543210");
+var loser=testElseIf("CBA9876543213");
+
+console.log(winner+"Your lottery number is ABC0123456789");
+console.log(secondWinner+"Your lottery number is CBA9876543210");
+console.log(loser);
 
 
