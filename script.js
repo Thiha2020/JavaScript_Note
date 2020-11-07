@@ -134,8 +134,30 @@ console.log(equalityOperator(secondUserInput));
 //=>It is not equal number or  value type
 console.log(equalityOperator(thirdUserInput));
 //=>It is not equal number or  value type
- 
-  
+
+function testNotEqual(val) {
+    if (val !=99){//If val is not equal to 99 print Not equal
+        return "Not Equal";
+    }
+    return "Equal";//If val is equal to 99 print Equal
+}
+console.log(testNotEqual(99));//=>Equal
+console.log(testNotEqual(12));//=>Not Equal
+
+function testStrictNotEqual(val){
+    if (val !==10){//If  val is equal to 10 + data type print Not equal
+        return "Not Equal";
+    }
+    return "Equal";//If val is equal to 10 but not data type print true
+}
+
+var ten=testStrictNotEqual(10);
+var string=testStrictNotEqual("10");
+var nine=testStrictNotEqual(9);
+
+console.log(ten);//=>Equal
+console.log(string);//=>Equal
+console.log(nine);//=>Not Equal
   
 
 
