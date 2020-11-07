@@ -224,20 +224,63 @@ console.log("Uncorrect user 2 "+wrongUser2);
 
 console.log("CODE 2.7");
 function testElseIf(lotteryNo){
-    if(lotteryNo=="ABC0123456789"){
+    //The lottery number accept enlgish alphabet captial or small letter
+    if(lotteryNo=="ABC0123456789"||lotteryNo=="abc0123456789"){
         return "Congrulation!You have win the prize!";
-    }else if(lotteryNo=="CBA9876543210"){
+    }else if(lotteryNo=="CBA9876543210"||lotteryNo=="cba9876543210"){
         return "Congrulation!You have win the constellation prize!";
+    }else if(string.length>13||string.length<13){
+        return "Invalid number"
+
     }else{
         return "Sorry!Try again.";
     }
 }
-var winner=testElseIf("ABC0123456789");
+var invaild_input=testElseIf("abc012345678");//If user miss one number print invaild
+var winner=testElseIf("abc0123456789");
 var secondWinner=testElseIf("CBA9876543210");
 var loser=testElseIf("CBA9876543213");
-
+console.log(invaild_input);
 console.log(winner+"Your lottery number is ABC0123456789");
 console.log(secondWinner+"Your lottery number is CBA9876543210");
 console.log(loser);
 
+console.log("Is your salary low or high?");
+function salary(amount){//This condition get from underneath var
+     if(amount <=0){
+        return amount; 
+    }else if(amount<=200){
+        return "low.";
+    }else if(amount<=300){
+        return "not so bad.";
+    }else if(amount<=400){
+        return "average.";
+    }else if(amount<=500){
+        return "good but not enough if you have big family.";
+    }else if(amount<=600){
+        return "good.You have enough to support your family and rent an average house if you don't have house.";
+    }else if(amount<=700){
+        return "good.You can buy Mac book with credit card if you want.";
+    }else if(amount<=800){
+        return "good. You can buy average apartment with installment."
+    }else if(amount<=900){
+        return "good.You can buy average apartment with full payment in one year if you save 20% of your salary per month. "
+    }else if(amount<=1000){
+        return "very good.Invest your money to your own business if you want."
+    }else if(amount>=2000){
+        return("higher than most peoples. Travel around the world if your work closed.")
+    }else if( amount=string){
+        return "fill with not a numbers or not fill anything. "
+    }
+}
+//You can put number instead of NaN data type in var amount
+var amount=178;//This var amount work for function salary() & final()
+function final(amount){//This condition get from var amount
+    if(amount<=0){
+        return "Please fill your amount greater than 0";
 
+    }else{
+        return "Your salary is "+ salary(amount);
+        }
+}
+console.log(final(amount));
