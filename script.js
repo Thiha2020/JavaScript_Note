@@ -284,3 +284,25 @@ function final(amount){//This condition get from var amount
         }
 }
 console.log(final(amount));
+
+console.log("CODE 2.8");
+function caseInSwitch(val){
+    switch(val){
+        case 1:
+            return "alpha";
+            break;
+            case 2:
+                return "beta";
+                break;
+                case 3:
+                    case 4:
+                        return "theta";
+                        break;
+                        case 5:
+                            return "gamma";
+                            break;
+    }
+}
+console.log(caseInSwitch(3));
+
+
