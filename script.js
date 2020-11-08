@@ -305,4 +305,22 @@ function caseInSwitch(val){
 }
 console.log(caseInSwitch(3));
 
+console.log("CODE 2.9");
+function switchOfStaff(val){
+    switch(val){
+        case "a":
+            return "Apple";
+            break;
+            case "b":
+                return "Bag";
+                break;
+                case "c":
+                    return "cat";
+                    break;
+                    default:
+                        return "staff";
+                        break;
+    }
 
+}
+console.log(switchOfStaff("not include"));//=>staff"
