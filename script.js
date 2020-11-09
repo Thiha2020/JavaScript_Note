@@ -324,3 +324,36 @@ function switchOfStaff(val){
 
 }
 console.log(switchOfStaff("not include"));//=>staff"
+
+console.log("Code 3.0");
+function sequentialSizes(val){
+    switch(val){
+        case 1:
+        case 2:
+        case 3:
+            return "Low";
+            break;
+            case 4:
+            case 5:
+            case 6:
+                return "Medium";
+                break;
+                case 7:
+                case 8:
+                case 9:
+                    return "High";
+                    break;
+    }
+}
+console.log(sequentialSizes(9));//=>High
+
+console.log("Code 3.1");
+console.log("Dog Profile");
+var myDog={
+    "name":"Blacky",
+    "color":"white",
+    "sex":"male",
+    "friends":["me","John"]
+
+};
+console.log(myDog);
