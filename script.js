@@ -357,3 +357,74 @@ var myDog={
 
 };
 console.log(myDog);
+
+console.log("Code 3.2");
+var testObj={
+    "hat": "ballcap",
+    "shirt":"Jersy",
+    "shoes":"cleats"
+};
+var hatValue=testObj.hat;
+var shirtValue=testObj.shirt;
+
+console.log(hatValue,shirtValue);
+
+console.log("Code 3.3");
+var testObj={
+    "an entree":"humburger",
+    "my side":"veggies",
+    "the drink":"water"
+};
+var entreeValue=testObj["an entree"];
+var mysideValue=testObj["my side"];
+var theDrinkValue=testObj["the drink"];
+
+console.log([entreeValue,mysideValue,theDrinkValue]);
+//=>[humburger", "veggies", "water"]
+
+console.log("Code 3.4");
+var testObj={
+    12: "Robert",
+    45: "Alice",
+    50: "John",
+};
+var playerNumber=12;
+
+var player=testObj[playerNumber];
+console.log(player)//=> Robert
+
+var someObj={
+    propName: "John"
+};
+function propPrefix(str){
+    var s="prop";
+    return s + str;
+}
+var someProp=propPrefix("Name");
+console.log(someObj[someProp]);//=>John
+
+console.log("Code 3.5");
+
+var myProfile={
+    "name":"Thiha Aung",
+    "age":20,
+    "occupation":"Web developer",
+    "height":"5.8 inch"
+};
+myProfile.name="Tun Lin Aung";
+console.log("Picking name form myProfile object");
+console.log(myProfile);
+function prefix(str){
+    var a="na";
+    return a + str;
+}
+var prop=prefix("me");
+console.log(myProfile[prop]);
+
+console.log("Code 3.6");
+var oldProfile={
+    "name":"Robert",
+    "age":30,
+    "occupation":"Accountant"
+};
+delete oldProfile.occupation;
